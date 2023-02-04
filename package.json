@@ -1,0 +1,31 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/frontend",
+      "packages/backend",
+      "packages/choices"
+    ],
+    "nohoist": [
+      "**/**"
+    ]
+  },
+  "scripts": {
+    "frontend": "yarn workspace @learn/frontend",
+    "backend": "yarn workspace @learn/backend",
+    "choices": "yarn workspace @learn/choices",
+    "web-start": "yarn workspace @learn/frontend start",
+    "app-start": "yarn workspace @learn/backend start:dev",
+    "server:lint": "yarn workspace @learn/backend lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-dinesh24murali:dinesh24murali/yarn_workspaces_example.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
