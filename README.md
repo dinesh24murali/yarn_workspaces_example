@@ -13,6 +13,7 @@ This is a mono repo containing a ReactJS, [NestJS](https://docs.nestjs.com/), an
 1. From the root of the repo. Run `yarn install`. This command will run `yarn install` on all the projects (`frontend`, `backend`, and `choices`)
 2. In the `backend` and `frontend` packages there will be a file called `.env.sample`. Take copy of this file and rename them to `.env` under the same package. Do this both in the backend and frontend packages.
 3. From the root of the application you can run the following command to interact with the application:
+
 Run the frontend
 ```
 yarn web-start
@@ -21,9 +22,13 @@ Run the backend
 ```
 yarn app-start
 ```
-Run the choices project in dev mode. This continue to watch for changes in the choices project and build the project as soon as something changes
+Run the choices project in dev mode. This will continue to watch for changes in the choices project and build the project as soon as something changes
 ```
 yarn choices dev
+```
+Build the choices package
+```
+yarn choices build
 ```
 Run eslint in the backend
 ```
@@ -37,7 +42,8 @@ Run testcases in the frontend
 ```
 yarn frontend test
 ```
-4. For the develop mean workflow you need to run the backend, and frontend in individual terminals. If you are changing any files in choices package then run choices package in a seperate terminal as well
+4. For the develop workflow you need to run the backend, and frontend in individual terminals. If you are changing any files in choices package then run choices package in a seperate terminal as well.
+5. When you are running the project for the first time you need to build the choices package
 
 
 ## Reference:
